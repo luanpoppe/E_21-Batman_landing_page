@@ -1,0 +1,34 @@
+@use "./var";
+
+.personagens{
+    margin-bottom: 36px;
+
+    &__titulo{
+        margin-bottom: 12px;
+        color: var.$vermelho;
+    }
+    
+    &__lista{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 12px;
+
+        &__item{
+
+            &__nome{
+                margin-bottom: 8px;
+                font-size: var.$fonteTexto;
+                color: var.$amarelo;
+            }
+            &__img{
+                max-width: 30vw;
+                width: 100%;
+            }
+            &__ator{
+                margin-bottom: 8px;
+            }
+
+        }
+    }
+
+}

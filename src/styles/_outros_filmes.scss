@@ -1,0 +1,55 @@
+@use "./var";
+
+.outros_filmes{
+    margin-bottom: 32px;
+
+    &__titulo{
+        color: var.$preto;
+        margin-bottom: 12px;
+    }
+
+    &__botoes{
+        display: flex;
+    }
+
+    &__lista{
+
+        &__item{
+            &__botao{
+                // width: 100%;
+                border: none;
+                margin-bottom: 16px;
+                // background-color: var.$vermelho;
+                background-color: var.$amarelo;
+                font-size: 1.2em;
+                padding: 8px;
+                font-weight: bold;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-right: 8px;
+            }
+
+            &__conteudo{
+                display: none;
+            }
+        }
+    }
+
+    &--is-active{
+        display: flex;
+        // background-color: blue;
+        // width: 100%;
+        // border-bottom: 2px solid black;
+    }
+
+    &__img{
+        max-width: 240px;
+        width: 100%;
+        margin-right: 32px;
+    }
+
+    &__sinopse{
+        font-size: var.$fonteTexto;
+        margin-right: 80px;
+    }
+}

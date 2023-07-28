@@ -1,0 +1,43 @@
+@use "./var";
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: var.$preto;
+    color: var.$vermelho;
+    padding: 16px;
+    border-radius: 8px;
+    // position: sticky;
+    // top: 0;
+    // left: 0;
+    
+    &__title{
+        // margin-left: 24px;
+        border-bottom: 2px solid white;
+    }
+
+    &__nav{
+        &__list{
+            display: flex;
+            justify-content: left;
+
+            &__item{
+                list-style: none;
+                margin: 8px;
+                margin-right: 16px;
+                padding: 8px;
+                border-radius: 4px;
+                // background-color: rgb(173, 152, 152);
+                border-bottom: 2px solid white;
+                
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: var.$vermelho;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Batman - Landing Page</title>
+    <link rel="stylesheet" href="dist\styles\main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header__title">
+            <h1>The Batman</h1>
+        </div>
+        <div class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item"><a href="#sinopse">Sinopse</a></li>
+                <li class="header__nav__list__item"><a href="#personagens">Personagens</a></li>
+                <li class="header__nav__list__item"><a href="#outros_filmes">Outros filmes</a></li>
+                <!-- <li class="header__nav__list__item"><a href="#">FAQ</a></li> -->
+            </ul>
+        </div>
+    </header>
+    <main class="main container">
+        <section class="sinopse" id="sinopse">
+            <img class="sinopse__img"
+                src="https://lh3.googleusercontent.com/6hSF6gPNg7Q7yrXY2Sgrc8rsaLtj0tJqyKDAmptp8nFF06LKVqdv_DsX1I74xQX52CZBuwGSZACX"
+                alt="">
+            <div>
+                <h2 class="sinopse__titulo">Sinopse</h2>
+                <p class="sinopse__texto">Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas
+                    profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se
+                    estabelece como a personificação da vingança para a população.</p>
+            </div>
+        </section>
+
+        <section class="personagens" id="personagens"> 
+            <h2 class="personagens__titulo">Personagens</h2>
+            <ul class="personagens__lista">
+                <li class="personagens__lista__item">
+                    <h3 class="personagens__lista__item__nome">Batman</h3>
+                    <p class="personagens__lista__item__ator">Ator: Robert Pattinson</p>
+                    <img class="personagens__lista__item__img" src="https://cosmonerd.com.br//uploads/2021/12/cosmonerd-the-batman-optimized.png" alt="Personagem Batman">
+                </li>
+                <li class="personagens__lista__item">
+                    <h3 class="personagens__lista__item__nome">Alfred</h3>
+                    <p class="personagens__lista__item__ator">Ator: Andy Serkis</p>
+                    <img class="personagens__lista__item__img" src="https://cdn.ome.lt/pPW753VCyAHyfIgkHtA0qIZnFVQ=/1200x630/smart/extras/conteudos/alfred_Dg4oegx.png" alt="Personagem Alfred">
+                </li>
+                <li class="personagens__lista__item">
+                    <h3 class="personagens__lista__item__nome">Charada</h3>
+                    <p class="personagens__lista__item__ator">Ator: Paul Dano</p>
+                    <img class="personagens__lista__item__img" src="https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2022/03/Paul-Dano.jpg" alt="Personagem Charada">
+                </li>
+                <li class="personagens__lista__item">
+                    <h3 class="personagens__lista__item__nome">Mulher Gato</h3>
+                    <p class="personagens__lista__item__ator">Atriz: Zoë Kravitz</p>
+                    <img class="personagens__lista__item__img" src="./src/images/Mulher_Gato.jpg" alt="Personagem Mulher Gato">
+                </li>
+            </ul>
+        </section>
+
+        <section class="outros_filmes" id="outros_filmes">
+            <h2 class="outros_filmes__titulo">Outros Filmes do Batman:</h2>
+            <div class="outros_filmes__botoes">
+                <button data-tab-button="Batman_Begins" class="outros_filmes__lista__item__botao">Batman Begins (2005)</button>
+                <button data-tab-button="Batman_Knight" class="outros_filmes__lista__item__botao">The Dark Knight (2008)</button>
+                <button data-tab-button="Batman_Superman" class="outros_filmes__lista__item__botao">Batman vs Superman: A Origem da Justiça (2016)</button>
+                <button data-tab-button="Batman_1989" class="outros_filmes__lista__item__botao">Batman (1989)</button>
+            </div>
+            <ul class="outros_filmes__lista">
+                <li class="outros_filmes__lista__item">
+                    <div data-tab-id="Batman_Begins" class="outros_filmes__lista__item__conteudo outros_filmes--is-active">
+                        <img class="outros_filmes__img" src="./src/images/Batman_Begins.jpg" alt="Batman Begins">
+                        <p class="outros_filmes__sinopse">
+                            O jovem Bruce Wayne viaja para o Oriente e recebe treinamento em artes marciais do mestre Henri Ducard, um membro da misteriosa Liga das Sombras. Quando Ducard revela que a verdadeira proposta da Liga é a destruição completa de Gotham City, Wayne retorna à sua cidade natal com o intuito de livrá-la de criminosos e assassinos. Bruce assume a persona de Batman, o Cavaleiro das Trevas, e conta com a ajuda do mordomo Alfred e do expert Lucius Fox.
+                        </p>
+                    </div>
+                </li>
+                <li class="outros_filmes__lista__item">
+                    <div data-tab-id="Batman_Knight" class="outros_filmes__lista__item__conteudo">
+                        <img class="outros_filmes__img" src="./src/images/The_Dark_Knight.jpg" alt="The Dark Knight">
+                        <p class="outros_filmes__sinopse">
+                            Com a ajuda de Jim Gordon e Harvey Dent, Batman tem mantido a ordem na cidade de Gotham. Mas um jovem e anárquico criminoso, conhecido como Coringa, pretende testar o justiceiro e mergulhar a cidade em um verdadeiro caos.
+                        </p>
+                    </div>
+                </li>
+                <li class="outros_filmes__lista__item">
+                    <div data-tab-id="Batman_Superman" class="outros_filmes__lista__item__conteudo">
+                        <img class="outros_filmes__img" src="./src/images/Batman_vs_Superman.jpg" alt="Batman vs Superman">
+                        <p class="outros_filmes__sinopse">
+                            O confronto entre Superman e Zod em Metrópolis fez a população mundial se dividir sobre a presença de extraterrestres na Terra. Enquanto muitos consideram Superman um novo deus, há aqueles que entendem ser extremamente perigosa a existência de um ser tão poderoso sem qualquer tipo de controle. Bruce Wayne é um dos que acreditam nesta segunda hipótese. Sob o manto de um Batman violento e obcecado, ele enfrenta Superman enquanto o mundo se pergunta que tipo de herói precisa.
+                        </p>
+                    </div>
+                </li>
+                <li class="outros_filmes__lista__item">
+                    <div data-tab-id="Batman_1989" class="outros_filmes__lista__item__conteudo">
+                        <img class="outros_filmes__img" src="./src/images/Batman_1989.jpg" alt="Batman 1989">
+                        <p class="outros_filmes__sinopse">
+                            Após testemunhar a morte brutal de seus pais quando criança, o milionário filantropo Bruce Wayne luta contra o crime na cidade de Gotham disfarçado do herói Batman, que coloca medo nos corações dos vilões. Mas quando um louco e deformado que se autointitula Coringa começa a controlar o submundo do crime em Gotham, Batman precisa encarar seu mais perverso inimigo para proteger sua identidade e a mulher que ama, a repórter Vicki Vale.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
